@@ -49,7 +49,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_all_notes() {
+    fn test_generated_notes() {
         let notes = Pitch::all_notes();
         assert_eq!(27.5, notes.get("A0").unwrap().frequency);
         assert_eq!(55.0, notes.get("A1").unwrap().frequency);
